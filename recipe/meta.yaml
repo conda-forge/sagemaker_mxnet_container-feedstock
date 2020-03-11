@@ -1,5 +1,5 @@
 {% set name = "sagemaker_mxnet_container" %}
-{% set version = "3.1.11" %}
+{% set version = "3.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/sagemaker_mxnet_training/sagemaker_mxnet_training-{{ version }}.tar.gz
-  sha256: 1b88ff8d74ffd927cffac8edb962801c250028546d0579ed7eaa6f6deba1f87e
+  sha256: 3219533181c1391aadff086299252996c4f15ebe9e1e447165c22bbfa386e53c
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ about:
   license: Apache 2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Open source library for creating MXNet containers to run on Amazon SageMaker."
+  summary: Open source library for creating MXNet containers to run on Amazon SageMaker.
   doc_url: https://pypi.org/project/sagemaker-mxnet-training/
   dev_url: https://github.com/aws/sagemaker-mxnet-containers
 
