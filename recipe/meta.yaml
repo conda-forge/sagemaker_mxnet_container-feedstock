@@ -1,5 +1,5 @@
 {% set name = "sagemaker_mxnet_container" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.0.post0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/sagemaker_mxnet_training/sagemaker_mxnet_training-{{ version }}.tar.gz
-  sha256: 9d06b5033ce4a1e802da85bc5b1b8980d77736e55021434586cc1eca1b306e04
+  sha256: 31d0f7842d16fbe086192e28026b4f50105c320d18f8064477cf2a070ff296c6
 
 build:
   noarch: python
