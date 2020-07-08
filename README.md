@@ -5,7 +5,7 @@ Home: https://github.com/aws/sagemaker-mxnet-containers
 
 Package license: Apache 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Open source library for creating MXNet containers to run on Amazon SageMaker.
 
