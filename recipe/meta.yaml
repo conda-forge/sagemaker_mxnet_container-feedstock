@@ -6,24 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/sagemaker_mxnet_training/sagemaker_mxnet_training-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/sagemaker_mxnet_training/sagemaker_mxnet_training-{{ version }}.tar.gz
   sha256: 44118bc2d230ce8b1343934cb9e23a1068043c5b476a09ffd33278fe8dd7914e
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
   run:
-    - python
+    - python >={{ python_min }}
     - retrying
     - sagemaker_containers
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sagemaker_mxnet_container
 
